@@ -1,0 +1,24 @@
+#map {
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  position: absolute;
+  height: calc(100% - 56px);
+}
+#menu {
+  z-index: -2;
+  position: absolute;
+  height: calc(100% - 56px);
+}
+#caracteristicas {
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  overflow: auto;
+  background: #000;
+  height: calc(100% - 56px);
+}
+.mapboxgl-ctrl-bottom-left,
+.mapboxgl-ctrl-bottom-right {
+  visibility: hidden;
+}
