@@ -6,10 +6,9 @@ const mapLayers = [
       source: "highlight",
       layout: {},
       paint: {
-        "line-color": "#00FF00",
+        "line-color": "#f08",
         "line-width": 3
       }
-    },
-    ""
+    }
   ]
 ];
