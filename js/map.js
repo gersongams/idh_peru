@@ -10,14 +10,28 @@ var map = new mapboxgl.Map({
   attributionControl: false
 });
 
-let data_res;
+/* let data_res;
 
 fetch("/data/idh_peru.json")
   .then(response => response.json())
   .then(json => {
     data_res = JSON.parse(json);
     console.log(data_res);
+  }); */
+
+function addCustomLayers(map) {
+  mapSources.forEach(function(source) {
+    let id = source[0];
+    let obj = source[1];
+    map.addSource(id, obj);
   });
+
+  mapLayers.forEach(function(layer) {
+    let obj = layer[0];
+    let label = layer[1];
+    map.addLayer(obj, label);
+  });
+}
 
 map.on("load", function() {
   // Add source for state polygons hosted on Mapbox
