@@ -5,7 +5,7 @@ var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/gerson231294/cjbdu3v1v8hgn2sntf58bdzwm",
   center: [-77.039, -9.489],
-  zoom: 3,
+  zoom: 5,
   preserveDrawingBuffer: true,
   attributionControl: false
 });
@@ -122,7 +122,7 @@ map.on("load", function() {
 
       if (indicadores.length > 0) {
         indicadores.map(function(e2) {
-          console.log(e2.properties);
+          //console.log(e2.properties);
           return e2;
         });
       }
@@ -133,6 +133,7 @@ map.on("load", function() {
           features: indicadores
         });
         if (indicadores[0].properties.ID_PROV !== ID_PROV) {
+          actualizarIndicadores(indicadores[0].properties);
           ID_PROV = indicadores[0].properties.FIPS;
         }
       } else if (indicadores.length > 0 && map.getZoom() >= 8.0) {
@@ -141,6 +142,7 @@ map.on("load", function() {
           features: indicadores
         });
         if (indicadores[0].properties.ID_PROV !== ID_PROV) {
+          actualizarIndicadores(indicadores[0].properties);
           ID_PROV = indicadores[0].properties.FIPS;
         }
       } else {

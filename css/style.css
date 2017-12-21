@@ -17,6 +17,7 @@
   overflow: auto;
   background: #000;
   height: calc(100% - 56px);
+  color: #fff;
 }
 .mapboxgl-ctrl-bottom-left,
 .mapboxgl-ctrl-bottom-right {
