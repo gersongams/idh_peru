@@ -10,8 +10,8 @@ function capitalizeFirstLetter(string) {
 
 function actualizarIndicadores(datos) {
   console.log("datos", datos);
-  localizacion.text("Localizacion: " + capitalizeFirstLetter(datos.P_NOMB));
-  departamento.text("Localizacion: " + capitalizeFirstLetter(datos.ID_DEPNOM));
+  localizacion.text("Distrito: " + capitalizeFirstLetter(datos.P_NOMB));
+  departamento.text("Departamento: " + capitalizeFirstLetter(datos.ID_DEPNOM));
   poblacion.text("Poblacion: " + datos.Poblacion);
 
   stats.html(`

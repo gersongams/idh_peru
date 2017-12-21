@@ -4,7 +4,7 @@ mapboxgl.accessToken =
 var map = new mapboxgl.Map({
   container: "map",
   style: "mapbox://styles/gerson231294/cjbdu3v1v8hgn2sntf58bdzwm",
-  center: [-77.039, -9.489],
+  center: [-74.039, -9.489],
   zoom: 5,
   preserveDrawingBuffer: true,
   attributionControl: false

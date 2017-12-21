@@ -22,7 +22,17 @@ const mapLayers = [
         "fill-color": {
           property: "IDH",
           type: "exponential",
-          stops: [[1, "#ff0000"]]
+          stops: [
+            [0.1, "#ffffd9"],
+            [0.2, "#edf8b1"],
+            [0.3, "#c7e9b4"],
+            [0.4, "#7fcdbb"],
+            [0.5, "#41b6c4"],
+            [0.6, "#1d91c0"],
+            [0.7, "#225ea8"],
+            [0.9, "#253494"],
+            [1, "#081d58"]
+          ]
         },
         "fill-opacity": {
           stops: [[0, 0.5], [8, 0.5], [10, 0]]
@@ -56,9 +66,9 @@ const mapLayers = [
             [1, "#081d58"]
           ]
         },
-        'fill-opacity': {
-            stops:[[0, 0.5], [8, 0.5], [10, 0]]
-          }
+        "fill-opacity": {
+          stops: [[0, 0.5], [8, 0.5], [10, 0]]
+        }
       }
     }
   ],

@@ -13,7 +13,7 @@ const mapSources = [
     "maps",
     {
       type: "vector",
-      url: "mapbox://gerson231294.1714wicl"
+      url: "mapbox://gerson231294.7mrzne7j"
     }
   ]
 ];
