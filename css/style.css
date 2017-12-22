@@ -1,8 +1,8 @@
-h3 {
-  padding: 0.5rem 0;
+html,
+body {
+  font-size: 15px;
 }
 #map {
-  visibility: hidden;
   bottom: 0px;
   left: 0px;
   width: 100%;
@@ -10,6 +10,7 @@ h3 {
   height: calc(100% - 56px);
 }
 #menu {
+  visibility: hidden;
   z-index: -2;
   position: absolute;
   height: calc(100% - 56px);
@@ -22,6 +23,11 @@ h3 {
   background: #000;
   height: calc(100% - 56px);
   color: #fff;
+  font-size: 0.9rem;
+}
+#caracteristicas h3 {
+  font-size: 1.3rem;
+  padding: 0.5rem 0;
 }
 #caracteristicas .indicadores {
   padding: 1rem 0.5rem;
